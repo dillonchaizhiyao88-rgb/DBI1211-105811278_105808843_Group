@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+          content="Feedback Page for Explore Sarawak">
+    <title>Feedback - Explore Sarawak</title>
+    <link rel="stylesheet" href="feedback.css">
+
+</head>
+
+<body id="top">
+
+    <header>
+        <div class="logo">Explore Sarawak</div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+				<li><a href="booking.html">Booking</a></li>
+                <li><a href="itinerary.html">Itinerary</a></li>
+                <li><a href="destination.html">Destination</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+				<li><a href="email.html">Email</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <article>
+
+        <h2 class="modern-title">Feedback Form</h2>
+
+        <p class="intro">
+            We appreciate you coming to Explore Sarawak.
+            To help us improve our website and services, kindly share your 
+			thoughts and recommendations.
+        </p>
+
+        <form action="#"
+              method="post"
+			  onsubmit="feedbackMessage(); return false;">
+
+            <fieldset>
+
+                <legend>
+                    Visitor Information
+                </legend>
+
+                <table>
+				
+                    <tr>
+
+                        <td>
+                            <label for="fullname">
+                                Full Name:
+                            </label>
+                        </td>
+
+                        <td>
+                            <input type="text"
+                                   id="fullname"
+                                   name="fullname"
+                                   placeholder="Enter your name"
+                                   required>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            <label for="email">
+                                Email Address:
+                            </label>
+                        </td>
+
+                        <td>
+                            <input type="email"
+                                   id="email"
+                                   name="email"
+                                   placeholder="example@gmail.com"
+                                   required>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            Gender:
+                        </td>
+
+                        <td>
+
+                            <input type="radio"
+                                   id="male"
+                                   name="gender"
+                                   value="male">
+
+                            <label for="male">
+                                Male
+                            </label>
+
+                            <input type="radio"
+                                   id="female"
+                                   name="gender"
+                                   value="female">
+
+                            <label for="female">
+                                Female
+                            </label>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            <label for="visitdate">
+                                Visit Date:
+                            </label>
+                        </td>
+
+                        <td>
+                            <input type="date"
+                                   id="visitdate"
+                                   name="visitdate">
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            <label for="destination">
+                                Favourite Destination:
+                            </label>
+                        </td>
+
+                        <td>
+
+                            <select id="destination"
+                                    name="destination">
+
+                                <option value="kuching">
+                                    Kuching
+                                </option>
+
+                                <option value="mulu">
+                                    Mulu National Park
+                                </option>
+
+                                <option value="bako">
+                                    Bako National Park
+                                </option>
+
+                                <option value="santubong">
+                                    Mount Santubong
+                                </option>
+
+                            </select>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            Preferred Services:
+                        </td>
+
+                        <td>
+
+                            <input type="checkbox"
+                                   id="hotel"
+                                   name="service"
+                                   value="hotel">
+
+                            <label for="hotel">
+                                Hotel Booking
+                            </label>
+
+                            <br>
+
+                            <input type="checkbox"
+                                   id="flight"
+                                   name="service"
+                                   value="flight">
+
+                            <label for="flight">
+                                Flight Booking
+                            </label>
+
+                            <br>
+
+                            <input type="checkbox"
+                                   id="tourguide"
+                                   name="service"
+                                   value="tourguide">
+
+                            <label for="tourguide">
+                                Travel Guide
+                            </label>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            <label for="rating">
+                                Website Rating:
+                            </label>
+                        </td>
+
+                        <td>
+
+                            <input type="range"
+                                   id="rating"
+                                   name="rating"
+                                   min="1"
+                                   max="10">
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            <label for="comments">
+                                Comments:
+                            </label>
+                        </td>
+
+                        <td>
+
+                            <textarea id="comments"
+                                      name="comments"
+                                      rows="6"
+                                      cols="40"
+                                      placeholder="Write your comments here">
+                            </textarea>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td colspan="2">
+
+                            <input type="submit"
+                                   value="Submit Feedback">
+
+                            <input type="reset"
+                                   value="Reset Form">
+
+                        </td>
+
+                    </tr>
+
+                </table>
+
+            </fieldset>
+
+        </form>
+
+        <p>
+
+            <a href="#top">
+                Back to Top
+            </a>
+
+        </p>
+
+    </article>
+
+    <footer>
+        <p>&copy; 2026 Explore Sarawak</p>
+    </footer>
+
+    <script>
+    function feedbackMessage() {
+       alert("Thank you for your feedback!");
+}
+</script>
+
+
+</body> 
+
+</html>
